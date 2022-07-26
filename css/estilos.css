@@ -40,7 +40,7 @@ body {
 }
 /* Index Grid =============================*/
 .grid-container{
-    font-family: "poppins", sans-serif;
+    font-family: 'Yaldevi', sans-serif;
     font-size: 35px;
    
     width: 90%;
@@ -96,13 +96,12 @@ body {
 /*Index Grid Responsive=======================*/
 @media (max-width:768px){
     .grid-container{
-    font-family: "poppins", sans-serif;
+    font-family: 'Yaldevi', sans-serif;
     font-size: 35px;
     
     width: 90%;
     height: 600px;
     margin: 40px auto;
-    border: 1px groove black;
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -211,4 +210,294 @@ header{
         transition: all .25s;
     }
     
-}    
+} 
+/*FORMULARIO DE CONTACTO===================================*/
+.body-contact{
+    background: #00000025;
+    color: #fff;
+    font-family: 'Yaldevi', sans-serif;
+    padding: 0 1.5em;
+    border-radius: 20px;
+}
+
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    margin-top: 6em;
+    
+}
+
+.contenedor-contacto{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+}
+
+.contenedor-contacto > *{
+    padding: 1em;
+}
+
+.formulario-contacto{
+    background-color: #222222c5;
+    border-radius: 20px;
+}
+
+.formulario-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form .bloque{
+    grid-column: 1/3;
+
+}
+
+.formulario-contacto form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 1px solid #ffffff;
+    color: #fff;
+}
+
+.formulario-contacto form button{
+    background-color: #1100ff;
+    border-radius: 20px;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Yaldevi', sans-serif;
+}
+.formulario-contacto form button:hover{
+    color: blue;
+    background-color: red;
+
+}
+
+.info-contacto{
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-image: url(/assets/backgrounds/fondo3.jpg);
+    background-size: cover;  
+}
+
+.icono-perfil{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 1em;     
+}
+.info-contacto h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.info-contacto ul{
+    list-style-type: none;
+    
+}
+
+.info-contacto ul li{
+    padding: .3em;
+}
+
+
+/*Formulario responsive========================*/
+@media (min-width: 768px) {
+
+    .body-contact{
+        height: 100vh;
+        padding: 0 4rem;
+    }
+
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedor-contacto > *{
+        padding: 2em;
+    }
+
+    .info-contacto h4,
+    .info-contacto ul,
+    .info-contacto p{
+        padding: 1em;
+        text-align: left;
+        
+    }
+    
+}
+/*Equipamiento Grid==========================*/
+.equipamiento-grid{
+    font-family: "poppins", sans-serif;
+    font-size: 35px;
+   
+   
+    width: 90%;
+    height: 600px;
+    margin: 40px auto; 
+
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px 290px 290px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas:
+    "img1 img2 img3 img4 img5 img6"
+    "img7 img8 img9 img10 img11 img12"
+    "img13 img14 img15 img16 img17 img18"   
+    ;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.img1{
+    background-color: #1100ff;
+}
+.img2{
+    background-color: #fff;
+}
+.img3{
+    background-color: #1100ff;
+}
+.img4{
+    background-color: #fff;
+}
+.img5{
+    background-color: #1100ff;
+}
+.img6{
+    background-color: #fff;
+}
+.img7{
+    background-color: #1100ff;
+}
+.img8{
+    background-color: #fff;
+}
+.img9{
+    background-color: #1100ff;
+}
+.img10{
+    background-color: #fff;
+}
+.img11{
+    background-color: #1100ff;
+}
+.img12{
+    background-color: #fff;
+}
+.img13{
+    background-color: #1100ff;
+}
+.img14{
+    background-color: #fff;
+}
+.img15{
+    background-color: #1100ff;
+}
+.img16{
+    background-color: #fff;
+}
+.img17{
+    background-color: #1100ff;
+}
+.img18{
+    background-color: #fff;
+}
+
+/*Equipamiento  Grid Responsive==========================*/
+@media(max-width:768px){
+    .equipamiento-grid{
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 35px;
+    
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-areas:
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img8"
+    "img9"
+    "img10"
+    "img11"
+    "img12"
+    "img13"
+    "img14"
+    "img15"
+    "img16"
+    "img17"
+    "img18"
+    }
+}
+/*Promociones Grid =============================*/
+.promociones-grid{
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 25px;
+
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns:100% ;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "promo1"
+    "promo2"
+    "promo3";
+}
+.promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo1{
+    background-color: #1100ff;
+}
+.promo2{
+    background-color: #fff;
+}
+.promo3{
+    background-color:#1100ff;
+}
+/*Promociones Grid Responsive============================*/
+@media(max-width:768px){
+    .promociones-grid{
+        font-family: 'Yaldevi', sans-serif;
+    font-size: 25px;
+
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "promo1"
+    "promo2"
+    "promo3"
+    ;
+    }
+}
