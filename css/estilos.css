@@ -152,6 +152,11 @@ header{
     text-decoration: none;
     font-family: 'Yaldevi', sans-serif;   
 }
+.nav-menu a:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
+    
+}
 .btn{
     border: none;
 }
@@ -162,6 +167,11 @@ header{
     border-radius: 10px;
     color: white;
     font-family: 'Yaldevi', sans-serif;
+}
+/*color gradiente*/
+.btn a:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
 }
 .menu-icon img{
     width: 30px;
@@ -281,9 +291,11 @@ header{
     cursor: pointer;
     font-family: 'Yaldevi', sans-serif;
 }
+/*color boton gradiente*/
 .formulario-contacto form button:hover{
-    color: blue;
-    background-color: red;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
+   
 
 }
 
