@@ -20,25 +20,44 @@
 </head>
 <body>
   <header class="header">
-     
-      <div class="logo-header">
-          <a href=""><img src="assets/Img/img-sonar.jpg" alt=""></a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="d-flex">
+        <img src="/assets/Img/img-sonar.jpg" alt="logo" width="80px" height="30px">
       </div>
-      <nav class="nav-menu">
-          <input type="checkbox" id="check">    
-          <label for="check" class="checkbtn">
-            <i class="menu-icon"><img src="assets/Img/lista.png" alt=""></i>
-          </label>
-          <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="pages/equipamiento.html">Equipamientos</a></li>
-              <li><a href="pages/media.html">Media</a></li>
-              <li><a href="pages/promociones.html">Promociones</a></li>
-          </ul>
-      </nav>
-        <button class="btn">
-          <a href="pages/contacto.html">Contacto</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sonar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="d-flex justify-content-around" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Promociones</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Equipamiento
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Iluminacion</a></li>
+                <li><a class="dropdown-item" href="#">Sonido</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
     <main id="video-ubi">
         <section class="grid-container">
