@@ -123,9 +123,8 @@ body {
 
 
 /*Barra de navegacion=============================*/
-header{
-    color: #fff;
-    
+header{ 
+    display: flex;
     justify-content:space-between;
     align-items:center;
     padding: .5rem 2rem;
@@ -133,9 +132,6 @@ header{
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.555);
 }
-.logo-header img{
-    width: 80px;}
-
 /*FORMULARIO DE CONTACTO===================================*/
 .body-contact{
     background: #00000025;
