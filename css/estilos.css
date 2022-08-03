@@ -263,54 +263,27 @@ header{
     
 }
 
-/*Promociones Grid =============================*/
-.promociones-grid{
-    font-family: 'Yaldevi', sans-serif;
-    font-size: 25px;
-
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-
-    display: grid;
-    grid-template-columns:100% ;
-    grid-template-rows: 300px;
-    grid-template-areas: 
-    "promo1"
-    "promo2"
-    "promo3";
+/*carrusel====================================*/
+.carrusel{
+    width: 29%;
+    
 }
-.promo{
+.flex-carrusel{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.promo1{
-    background-color: #1100ff;
+.carousel-inner{
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 20px;
 }
-.promo2{
-    background-color: #fff;
-}
-.promo3{
-    background-color:#1100ff;
-}
-/*Promociones Grid Responsive============================*/
-@media(max-width:768px){
-    .promociones-grid{
-        font-family: 'Yaldevi', sans-serif;
-    font-size: 25px;
+/*carrusel responsive================================*/
+@media (max-width: 768px){
 
-    width: 90%;
-    height: 600px;
-    margin: 40px auto;
-
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: 
-    "promo1"
-    "promo2"
-    "promo3"
-    ;
+    .carrusel{
+        width:100%;
     }
+    .carousel-inner{
+        border: solid rgb(0, 0, 0) 1px;
+        border-radius: 20px;
+    }   
 }
