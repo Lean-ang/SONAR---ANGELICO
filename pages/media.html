@@ -11,6 +11,9 @@
     <!--Hojas de estilo manera externa-->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/font-awesome.css">
+    <!--Animate CSS-->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--js-->
     <script src="../js/jquery-3.2.1.js"></script>
     <script src="../js/script.js"></script>
@@ -54,14 +57,14 @@
       </nav>
     </header>
     <main class="flex-carrusel">
-        <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="true">
+         <div id="carrusel-media" class="carousel slide carrusel" data-bs-ride="true">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carrusel-media" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrusel-media" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrusel-media" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carrusel-media" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carrusel-media" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carrusel-media" data-bs-slide-to="5" aria-label="Slide 6"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -83,30 +86,33 @@
               <img src="/assets/media/media6.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-media" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carrusel-anterior" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carrusel-media" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">Siguiente</span>
           </button>
         </div>
       
     </main>
     <!--Pie de Pagina-->
-    <footer id="footer">
-        <article>
-            <h4>Desarrollado por Leandro Angelico</h4>
-            <h4>Seguinos en nuestras redes</h4>
-        </article>
-    
-        <article class="redessociales">
-            <!--Iconos de redes-->
-            <!--Iconos de redes-->
-            <!--Iconos de redes-->
-        </article>
+    <footer class="container-fluid">
+      <ul>
+        <li class="nav-item animacion-footer animate__animated animate__backInLeft">
+          <a class="nav-link" href="/pages/contacto.html"><i class="fa fa-whatsapp fa-3x"></i></a>
+        </li>
+        <li class="nav-item animacion-footer animate__animated animate__backInLeft">
+          <a class="nav-link" href="https://www.instagram.com/sonarsannicolas/"><i class="fa fa-instagram fa-3x"></i></a>
+        </li>
+        <li class="nav-item animacion-footer animate__animated animate__backInLeft">
+          <a class="nav-link" href="https://www.facebook.com/sonarsannicolas.sonarsannicolas.9"><i class="fa fa-facebook fa-3x iconfb"></i></a>
+        </li>
+      </ul>
     </footer>
+
+    <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
