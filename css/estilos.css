@@ -288,6 +288,13 @@ header{
     }   
 }
 
+/*sonido========================================*/
+
+.fondo-img{
+    background: #00000088;
+    border: solid #00000088 2px;
+    border-radius: 20px;
+}
 
 .txt{
     color: wheat;
