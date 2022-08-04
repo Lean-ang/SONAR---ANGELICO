@@ -5,11 +5,8 @@
     font-weight: normal;
     font-style: normal;}
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Roboto Slab', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Anton', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Anton', sans-serif */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap'); /*font-family: 'Cormorant SC', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap'); /*font-family: 'Yaldevi', sans-serif; */
 
 *{
@@ -28,16 +25,62 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-   
+    flex-wrap: wrap;
 }
 /* footer===================================*/
-#footer{
-    width: 100%;
-    height:115px;
-    color: rgb(255, 255, 255);
-    padding: 20px 20px;
-    font-family: 'Roboto Slab', serif;
+footer{
+    padding: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, 
+    rgba(255,255,255,0.196516106442577) 27%,
+    rgba(0,0,0,0.4009978991596639) 57%,
+    rgba(0,0,0,0.4009978991596639) 100%,
+    rgba(0,0,0,0.40379901960784315) 100%);
+    position: relative;
+    
+    
+
 }
+  footer ul {
+    color: white;
+    display: flex;
+    justify-content:flex-end;
+    list-style: none; 
+  }
+  footer ul li{
+    padding-left: 20px;
+    position: relative;
+  }
+  footer ul li:hover{
+    cursor: pointer;
+    color: rgb(0,61,255);
+  }
+  .iconfb{
+    padding-right: 20px;
+}
+
+.camada41165{
+    animation-name: backInLeft;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-timing-function: ease-out;
+}
+
+  /*footer responsive====================*/
+  @media (max-width:768px){
+    footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;   
+    }
+    footer ul li{
+        padding-left: 20px;
+    }
+    .iconfb{
+        padding-right: 10px;   
+    }  
+  }
+   
 /* Index Grid =============================*/
 .grid-container{
     font-family: 'Yaldevi', sans-serif;
@@ -90,6 +133,7 @@ body {
     flex-direction: column;
     justify-content:flex-start;
     margin-top: 35px;
+    margin-bottom: 35px;
 
     grid-area: ubi;  
 }
@@ -100,7 +144,7 @@ body {
     font-size: 35px;
     
     width: 90%;
-    height: 600px;
+    height: 110vh;
     margin: 40px auto;
     display: grid;
     grid-template-columns: 100%;
@@ -109,6 +153,7 @@ body {
     "video"
     "titulo-ubi"
     "ubi"
+    "."
     ;
     }
 
@@ -130,24 +175,27 @@ header{
     padding: .5rem 2rem;
     text-decoration:none;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.555);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, 
+    rgba(255,255,255,0.196516106442577) 27%,
+    rgba(0,0,0,0.4009978991596639) 57%, 
+    rgba(0,0,0,0.4009978991596639) 100%, 
+    rgba(0,0,0,0.40379901960784315) 100%);
 }
+
 /*FORMULARIO DE CONTACTO===================================*/
-.body-contact{
+.contenido{
     background: #00000025;
     color: #fff;
     font-family: 'Yaldevi', sans-serif;
     padding: 0 1.5em;
     border-radius: 20px;
-}
 
-.contenido{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
-    margin-top: 6em;
-    
+    padding: 1.5em;  
+    margin-bottom: 150px; 
 }
 
 .contenedor-contacto{
@@ -276,6 +324,15 @@ header{
     border: solid rgb(0, 0, 0) 1px;
     border-radius: 20px;
 }
+.carousel-indicators{
+  margin-bottom: 40px;
+}
+.carousel-control-prev{
+    margin-bottom: 80px;
+}
+.carousel-control-next{
+    margin-bottom: 80px;
+}
 /*carrusel responsive================================*/
 @media (max-width: 768px){
 
@@ -296,6 +353,7 @@ header{
     border-radius: 20px;
 }
 
+/*texto iluminacion================*/
 .txt{
     color: wheat;
 }
