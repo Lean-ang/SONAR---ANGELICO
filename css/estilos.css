@@ -349,5 +349,11 @@ header{
 
 /*texto iluminacion================*/
 .txt{
-    color: wheat;
+    color: rgb(255, 255, 255);
+}
+
+/*fondo iluminacion======================*/
+.fondo-img{
+    background-color:rgba(0, 0, 0, 0.507) ;
+    border-radius: 20px;
 }
