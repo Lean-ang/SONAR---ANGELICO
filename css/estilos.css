@@ -347,13 +347,19 @@ header{
 }
 
 
-/*texto iluminacion================*/
+/*texto iluminacion-sonido================*/
 .txt{
     color: rgb(255, 255, 255);
 }
 
-/*fondo iluminacion======================*/
+/*fondo sonido======================*/
 .fondo-img{
     background-color:rgba(0, 0, 0, 0.507) ;
     border-radius: 20px;
+}
+/*fondo iluminacion====================*/
+.iluminacion-fondo{
+    background-color:rgba(0, 0, 0, 0.507) ;
+    border-radius: 20px;
+
 }
