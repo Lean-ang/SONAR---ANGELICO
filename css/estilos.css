@@ -1,365 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi&display=swap");
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;}
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Roboto Slab', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@500;800&display=swap'); /*font-family: 'Anton', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap'); /*font-family: 'Yaldevi', sans-serif; */
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+/*font-family: 'Roboto Slab', serif; */
+/*font-family: 'Anton', sans-serif;*/
+/*font-family: 'Yaldevi', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
-    background-image: url(../assets/backgrounds/fondo2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    flex-wrap: wrap;
+  background-image: url(../assets/backgrounds/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  flex-wrap: wrap;
 }
+
 /* footer===================================*/
-footer{
-    padding: 15px;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, 
-    rgba(255,255,255,0.196516106442577) 27%,
-    rgba(0,0,0,0.4009978991596639) 57%,
-    rgba(0,0,0,0.4009978991596639) 100%,
-    rgba(0,0,0,0.40379901960784315) 100%);
-    position: relative;
-    
-    
-
+footer {
+  padding: 15px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1965161064) 27%, rgba(0, 0, 0, 0.4009978992) 57%, rgba(0, 0, 0, 0.4009978992) 100%, rgba(0, 0, 0, 0.4037990196) 100%);
+  position: relative;
 }
-  footer ul {
-    color: white;
+
+footer ul {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+footer ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+footer ul li:hover {
+  cursor: pointer;
+  color: rgb(0, 61, 255);
+}
+
+.iconfb {
+  padding-right: 20px;
+}
+
+/*footer responsive====================*/
+@media (max-width: 768px) {
+  footer {
     display: flex;
-    justify-content:flex-end;
-    list-style: none; 
+    justify-content: flex-end;
+    align-items: flex-end;
   }
-  footer ul li{
+  footer ul li {
     padding-left: 20px;
-    position: relative;
   }
-  footer ul li:hover{
-    cursor: pointer;
-    color: rgb(0,61,255);
+  .iconfb {
+    padding-right: 10px;
   }
-  .iconfb{
-    padding-right: 20px;
 }
-
-.camada41165{
-    animation-name: backInLeft;
-    animation-duration: 5s;
-    animation-delay: 6s;
-    animation-timing-function: ease-out;
-}
-
-  /*footer responsive====================*/
-  @media (max-width:768px){
-    footer{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;   
-    }
-    footer ul li{
-        padding-left: 20px;
-    }
-    .iconfb{
-        padding-right: 10px;   
-    }  
-  }
-   
 /* Index Grid =============================*/
-.grid-container{
-    font-family: 'Yaldevi', sans-serif;
-    font-size: 35px;
-   
-    width: 90%;
-    height: 600px;
-    margin: 40px auto; 
+.grid-container {
+  font-family: "Yaldevi", sans-serif;
+  font-size: 35px;
+  width: 90%;
+  height: 600px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 100px;
+  grid-template-areas: "titulo .  titulo-ubi" "video  .  ubi";
+}
 
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 100px;
-    grid-template-areas:
-    "titulo .  titulo-ubi"
-    "video  .  ubi"
-    ;
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.item{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.item1{
-    color: white;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: white solid 2px ;
-    border-radius: 20px;
 
-    grid-area: titulo;
+.item1 {
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: end;
+  border-bottom: rgb(255, 255, 255) solid 2px;
+  border-radius: 20px;
+  grid-area: titulo;
 }
-.item2{ 
-    flex-direction: column;
-    justify-content:flex-start;
-    margin-top: 35px;
-   
-    grid-area: video;
-}
-.item3{
-    color: white;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: white solid 2px ;
-    border-radius: 20px;
 
-    grid-area: titulo-ubi;
+.item2 {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 35px;
+  grid-area: video;
 }
-.item4{
-    flex-direction: column;
-    justify-content:flex-start;
-    margin-top: 35px;
-    margin-bottom: 35px;
 
-    grid-area: ubi;  
+.item3 {
+  color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: end;
+  border-bottom: rgb(255, 255, 255) solid 2px;
+  border-radius: 20px;
+  grid-area: titulo-ubi;
 }
+
+.item4 {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  grid-area: ubi;
+}
+
 /*Index Grid Responsive=======================*/
-@media (max-width:768px){
-    .grid-container{
-    font-family: 'Yaldevi', sans-serif;
+@media (max-width: 768px) {
+  .grid-container {
+    font-family: "Yaldevi", sans-serif;
     font-size: 35px;
-    
     width: 90%;
     height: 110vh;
     margin: 40px auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas:
-    "titulo"
-    "video"
-    "titulo-ubi"
-    "ubi"
-    "."
-    ;
-    }
-
-.item1{
-    text-align: center;      
-}
-.item3{
+    grid-template-areas: "titulo" "video" "titulo-ubi" "ubi" ".";
+  }
+  .item1 {
     text-align: center;
+  }
+  .item3 {
+    text-align: center;
+  }
 }
-
-}
-
-
 /*Barra de navegacion=============================*/
-header{ 
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    padding: .5rem 2rem;
-    text-decoration:none;
-    font-size: 20px;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, 
-    rgba(255,255,255,0.196516106442577) 27%,
-    rgba(0,0,0,0.4009978991596639) 57%, 
-    rgba(0,0,0,0.4009978991596639) 100%, 
-    rgba(0,0,0,0.40379901960784315) 100%);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1965161064) 27%, rgba(0, 0, 0, 0.4009978992) 57%, rgba(0, 0, 0, 0.4009978992) 100%, rgba(0, 0, 0, 0.4037990196) 100%);
 }
 
 /*FORMULARIO DE CONTACTO===================================*/
-.contenido{
-    background: #00000025;
-    color: #fff;
-    font-family: 'Yaldevi', sans-serif;
-    padding: 0 1.5em;
-    border-radius: 20px;
-
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;  
-    margin-bottom: 150px; 
+.contenido {
+  background: rgba(0, 0, 0, 0.507);
+  color: rgb(255, 255, 255);
+  font-family: "Yaldevi";
+  padding: 0 1.5em;
+  border-radius: 20px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  margin-bottom: 150px;
 }
 
-.contenedor-contacto{
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.301);
-    border-radius: 20px;
+.contenedor-contacto {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.301);
+  border-radius: 20px;
 }
 
-.contenedor-contacto > *{
-    padding: 1em;
+.contenedor-contacto > * {
+  padding: 1em;
 }
 
-.formulario-contacto{
-    background-color: #222222c5;
-    border-radius: 20px;
+.formulario-contacto {
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 20px;
 }
 
-.formulario-contacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.formulario-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.formulario-contacto form .bloque{
-    grid-column: 1/3;
-
+.formulario-contacto form .bloque {
+  grid-column: 1/3;
 }
 
-.formulario-contacto form p{
-    margin: 0;
-    padding: 1em;
+.formulario-contacto form p {
+  margin: 0;
+  padding: 1em;
 }
 
 .formulario-contacto form button,
 .formulario-contacto form input,
-.formulario-contacto form textarea{
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    border-bottom: 1px solid #ffffff;
-    color: #fff;
+.formulario-contacto form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-.formulario-contacto form button{
-    background-color: #1100ff;
-    border-radius: 20px;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-    cursor: pointer;
-    font-family: 'Yaldevi', sans-serif;
+.formulario-contacto form button {
+  background-color: #1100ff;
+  border-radius: 20px;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  cursor: pointer;
+  font-family: "Yaldevi";
 }
+
 /*color boton gradiente*/
-.formulario-contacto form button:hover{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
-   
-
+.formulario-contacto form button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(6, 5, 79) 15%, rgb(255, 0, 0) 52%, rgb(9, 9, 121) 85%);
 }
 
-.info-contacto{
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    background-image: url(/assets/backgrounds/fondo3.jpg);
-    background-size: cover;  
+.info-contacto {
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  background-image: url(../assets/backgrounds/fondo3.jpg);
+  background-size: cover;
 }
 
-.icono-perfil{
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 1em;     
-}
-.info-contacto h2{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 150px;
+.icono-perfil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
-.info-contacto ul{
-    list-style-type: none;
-    
+.info-contacto h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
-.info-contacto ul li{
-    padding: .3em;
+.info-contacto ul {
+  list-style-type: none;
 }
 
+.info-contacto ul li {
+  padding: 0.3em;
+}
 
 /*Formulario responsive========================*/
 @media (min-width: 768px) {
-
-    .body-contact{
-        height: 100vh;
-        padding: 0 4rem;
-    }
-
-    .contenedor-contacto{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .contenedor-contacto > *{
-        padding: 2em;
-    }
-
-    .info-contacto h4,
-    .info-contacto ul,
-    .info-contacto p{
-        padding: 1em;
-        text-align: left;
-        
-    }
-    
+  .body-contact {
+    height: 100vh;
+    padding: 0 4rem;
+  }
+  .contenedor-contacto {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contenedor-contacto > * {
+    padding: 2em;
+  }
+  .info-contacto h4,
+.info-contacto ul,
+.info-contacto p {
+    padding: 1em;
+    text-align: left;
+  }
 }
-
 /*carrusel====================================*/
-.carrusel{
-    width: 29%;
-    
+.carrusel {
+  width: 29%;
 }
-.flex-carrusel{
-    display: flex;
-    justify-content: center;
+
+.flex-carrusel {
+  display: flex;
+  justify-content: center;
 }
-.carousel-inner{
-    border: solid rgb(0, 0, 0) 1px;
-    border-radius: 20px;
+
+.carousel-inner {
+  border: solid rgb(0, 0, 0) 1px;
+  border-radius: 20px;
 }
-.carousel-indicators{
+
+.carousel-indicators {
   margin-bottom: 40px;
 }
-.carousel-control-prev{
-    margin-bottom: 80px;
+
+.carousel-control-prev {
+  margin-bottom: 80px;
 }
-.carousel-control-next{
-    margin-bottom: 80px;
+
+.carousel-control-next {
+  margin-bottom: 80px;
 }
+
 /*carrusel responsive================================*/
-@media (max-width: 768px){
-
-    .carrusel{
-        width:100%;
-    }
-    .carousel-inner{
-        border: solid rgb(0, 0, 0) 1px;
-        border-radius: 20px;
-    }   
-}
-
-
-/*texto iluminacion-sonido================*/
-.txt{
-    color: rgb(255, 255, 255);
-}
-
-/*fondo sonido======================*/
-.fondo-img{
-    background-color:rgba(0, 0, 0, 0.507) ;
+@media (max-width: 768px) {
+  .carrusel {
+    width: 100%;
+  }
+  .carousel-inner {
+    border: solid rgb(0, 0, 0) 1px;
     border-radius: 20px;
+  }
 }
+.txt {
+  color: rgb(255, 255, 255);
+}
+
+.fondo-img {
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 20px;
+}
+
 /*fondo iluminacion====================*/
-.iluminacion-fondo{
-    background-color:rgba(0, 0, 0, 0.507) ;
-    border-radius: 20px;
-
-}
+.iluminacion-fondo {
+  background-color: rgba(0, 0, 0, 0.507);
+  border-radius: 20px;
+}/*# sourceMappingURL=estilos.css.map */
