@@ -93,7 +93,7 @@ footer ul li:hover {
   align-items: center;
 }
 
-.item1 {
+.item1, .item3 {
   color: rgb(255, 255, 255);
   flex-direction: column;
   justify-content: end;
@@ -102,7 +102,7 @@ footer ul li:hover {
   grid-area: titulo;
 }
 
-.item2 {
+.item2, .item4 {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 35px;
@@ -110,18 +110,10 @@ footer ul li:hover {
 }
 
 .item3 {
-  color: rgb(255, 255, 255);
-  flex-direction: column;
-  justify-content: end;
-  border-bottom: rgb(255, 255, 255) solid 2px;
-  border-radius: 20px;
   grid-area: titulo-ubi;
 }
 
 .item4 {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 35px;
   margin-bottom: 35px;
   grid-area: ubi;
 }
@@ -138,7 +130,7 @@ footer ul li:hover {
     grid-template-columns: 100%;
     grid-template-areas: "titulo" "video" "titulo-ubi" "ubi" ".";
   }
-  .item1 {
+  .item1, .item3 {
     text-align: center;
   }
   .item3 {
@@ -294,11 +286,7 @@ header {
   margin-bottom: 40px;
 }
 
-.carousel-control-prev {
-  margin-bottom: 80px;
-}
-
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
   margin-bottom: 80px;
 }
 
@@ -317,12 +305,12 @@ header {
 }
 
 .fondo-img {
-  background-color: rgba(0, 0, 0, 0.507);
   border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.507);
 }
 
 /*fondo iluminacion====================*/
 .iluminacion-fondo {
-  background-color: rgba(0, 0, 0, 0.507);
   border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.507);
 }/*# sourceMappingURL=estilos.css.map */

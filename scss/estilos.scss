@@ -1,7 +1,18 @@
 //imports========================//
 @import "fonts";
 @import "color";
-
+//VARIABLES====================================//
+@mixin iluminacion-img {
+    border-radius: 20px;
+    background-color: $color-negro;
+}
+@mixin form-contenido {
+    background: $color-negro;
+    color: $color-blanco;
+    font-family: $font-principal;
+    padding: 0 1.5em;
+    border-radius: 20px; 
+}
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -115,18 +126,12 @@ footer{
     grid-area: video;
 }
 .item3{
-    color: $color-blanco;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: $color-blanco solid 2px ;
-    border-radius: 20px;
-
+    @extend .item1;
+    
     grid-area: titulo-ubi;
 }
 .item4{
-    flex-direction: column;
-    justify-content:flex-start;
-    margin-top: 35px;
+    @extend .item2;
     margin-bottom: 35px;
 
     grid-area: ubi;  
@@ -179,11 +184,7 @@ header{
 
 /*FORMULARIO DE CONTACTO===================================*/
 .contenido{
-    background: $color-negro;
-    color: $color-blanco;
-    font-family: $font-principal;
-    padding: 0 1.5em;
-    border-radius: 20px;
+    @include form-contenido;
 
     max-width: 1170px;
     margin-left: auto;
@@ -246,7 +247,6 @@ header{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
    
-
 }
 
 .info-contacto{
@@ -322,7 +322,7 @@ header{
     margin-bottom: 80px;
 }
 .carousel-control-next{
-    margin-bottom: 80px;
+    @extend .carousel-control-prev;
 }
 /*carrusel responsive================================*/
 @media (max-width: 768px){
@@ -343,11 +343,9 @@ header{
 
 //======fondo sonido=======//
 .fondo-img{
-    background-color: $color-negro ;
-    border-radius: 20px;
+    @include iluminacion-img;
 }
 /*fondo iluminacion====================*/
 .iluminacion-fondo{
-    background-color: $color-negro ;
-    border-radius: 20px;
+    @include iluminacion-img;
 }
