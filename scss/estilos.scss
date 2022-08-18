@@ -71,102 +71,36 @@ footer{
     padding-right: 20px;
 }
 
-  /*footer responsive====================*/
-  @media (max-width:768px){
-    footer{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;   
-    }
-    footer ul li{
-        padding-left: 20px;
-    }
-    .iconfb{
-        padding-right: 10px;   
-    }  
-  }
    
-/* Index Grid =============================*/
-.grid-container{
-    font-family: 'Yaldevi', sans-serif;
-    font-size: 35px;
-   
-    width: 90%;
-    height: 600px;
-    margin: 40px auto; 
-
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 100px;
-    grid-template-areas:
-    "titulo .  titulo-ubi"
-    "video  .  ubi"
-    ;
-}
-.item{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.item1{
-    color: $color-blanco;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: $color-blanco solid 2px ;
+/* Index Grid Bootstrap =============================*/
+.titulos-index {
+    font-family:$font-principal;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border-bottom: rgb(255, 255, 255) solid 2px;
     border-radius: 20px;
-
-    grid-area: titulo;
-}
-.item2{ 
-    flex-direction: column;
-    justify-content:flex-start;
-    margin-top: 35px;
+  }
+  .video-index {
+    margin-top: 60px;
+  }
+  .ubicacion-index{
+    @extend .video-index;
    
-    grid-area: video;
-}
-.item3{
-    @extend .item1;
-    
-    grid-area: titulo-ubi;
-}
-.item4{
-    @extend .item2;
-    margin-bottom: 35px;
-
-    grid-area: ubi;  
-}
-/*Index Grid Responsive=======================*/
-@media (max-width:768px){
+  }
+  .grid-container{
+   padding: 60px; 
+  }
+  //index Responsive Bootstrap=====================//
+  @media (max-width:768px){
+    .video-index{
+        margin-top:5px
+    }
     .grid-container{
-    font-family: 'Yaldevi', sans-serif;
-    font-size: 35px;
-    
-    width: 90%;
-    height: 110vh;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "titulo"
-    "video"
-    "titulo-ubi"
-    "ubi"
-    "."
-    ;
+        padding:0px;
     }
 
-.item1{
-    text-align: center;      
-}
-.item3{
-    text-align: center;
-}
-
-}
-
-
-/*Barra de navegacion=============================*/
+  }
+/*Barra de navegacion Bootstrap=============================*/
 header{ 
     display: flex;
     justify-content:space-between;
@@ -182,58 +116,23 @@ header{
     rgba(0,0,0,0.40379901960784315) 100%);
 }
 
-/*FORMULARIO DE CONTACTO===================================*/
-.contenido{
+/*FORMULARIO DE CONTACTO BootStrap===================================*/
+.formulario{
     @include form-contenido;
 
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;  
-    margin-bottom: 150px; 
-}
-
-.contenedor-contacto{
+    
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.301);
     border-radius: 20px;
-}
 
-.contenedor-contacto > *{
-    padding: 1em;
-}
-
-.formulario-contacto{
     background-color: $color-negro;
     border-radius: 20px;
 }
 
-.formulario-contacto form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.formulario-contacto form .bloque{
-    grid-column: 1/3;
-}
-
-.formulario-contacto form p{
-    margin: 0;
-    padding: 1em;
-}
-
-.formulario-contacto form button,
-.formulario-contacto form input,
-.formulario-contacto form textarea{
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    border-bottom: 1px solid $color-blanco;
-    color: $color-blanco;
-}
-
-.formulario-contacto form button{
+.btn{
     background-color: $color-azul;
     border-radius: 20px;
     border: 0;
@@ -241,67 +140,62 @@ header{
     padding: 1em;
     cursor: pointer;
     font-family: $font-principal;
+    width: 100%;
 }
 /*color boton gradiente*/
-.formulario-contacto form button:hover{
+.btn:hover{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,5,79,1) 15%, rgba(255,0,0,1) 52%, rgba(9,9,121,1) 85%); 
    
 }
 
-.info-contacto{
+.img-contacto{
     color: $color-blanco;
     border-radius: 20px;
     background-image: url(../assets/backgrounds/fondo3.jpg);
     background-size: cover;  
+    height: 500px;
+    margin-left: 0.5px;
+}
+@media(max-width:768px){
+    .img-contacto{
+        margin-left:1px;
+       
+    }  
 }
 
 .icono-perfil{
     display: flex;
     justify-content: center; 
-    margin-bottom: 1em;     
+    text-align: center;
+    margin-bottom: 1em;  
+    font-size: 30px;  
+    margin-top: 20px;
 }
-.info-contacto h2{
+.txt-contacto{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 150px;
+    margin-top: 10px;
+    font-family:$font-principal;
 }
 
-.info-contacto ul{
-    list-style-type: none;   
-}
-
-.info-contacto ul li{
-    padding: .3em;
-}
-
-/*Formulario responsive========================*/
-@media (min-width: 768px) {
-
-    .body-contact{
-        height: 100vh;
-        padding: 0 4rem;
-    }
-
-    .contenedor-contacto{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .contenedor-contacto > *{
-        padding: 2em;
-    }
-
-    .info-contacto h4,
-    .info-contacto ul,
-    .info-contacto p{
-        padding: 1em;
-        text-align: left;
-        
-    }
+.titulo-contacto{
+    @extend .titulos-index;
+    text-align: center;
     
 }
+.icono-tel{
+    margin-top: 140px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.icono-email{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
 
 /*carrusel====================================*/
 .carrusel{

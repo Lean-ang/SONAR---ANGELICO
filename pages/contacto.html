@@ -60,55 +60,48 @@
 <!--Formulario de Contacto con Grid Responsive-->
 
 <main>
-    <div class="contenido">
-     <div class="contenedor-contacto">
-         <div class="formulario-contacto">
-             <h3>Unite a SONAR</h3>
-             <form action="">
-                 <p>
-                     <label for="nombre-completo">Nombre</label>
-                     <input type="text" name="nombre-completo">
-                 </p>
- 
-                 <p>
-                     <label for="correo">Correo Electrónico</label>
-                     <input type="email" name="correo">
-                 </p>
- 
-                 <p>
-                     <label for="telefono">Teléfono</label>
-                     <input type="tel" name="telefono">
-                 </p>
- 
-                 <p>
-                     <label for="asunto">Asunto</label>
-                     <input type="text" name="asunto">
-                 </p>
- 
-                 <p class="bloque">
-                     <label for="mensaje">Mensaje</label>
-                     <textarea name="mensaje" rows="3"></textarea>
-                 </p>
-  
-                 <p class="bloque">
-                     <button type="submit">
-                         Enviar
-                     </button>
-                 </p>
-             </form>
-         </div>
-         <div class="info-contacto">
-             <ul>
-                 <li class="icono-perfil"><i class="fa fa-user-circle fa-5x"></i></li>
-                </ul>
-                     <h2>Informacion de Contacto</h2>
-                <ul>
-                 <li class="icono-tel"><i class="fa fa-phone fa-2x"></i>336 4787-8754</li>
-                 <li class="icono-email"><i class="fa fa-envelope fa-2x"></i>sonar@gmail.com</li>
-             </ul>   
-         </div>
+  <div class="container">
+   <form class="row row-cols-2 g-3 mt-5 formulario">
+       <div class="col-12  titulo-contacto">Unite a SONAR</div>
+       <div class="row col-12  img-contacto">
+           <div class="icono-perfil"><i class="fa fa-user-circle fa-5x "><br><h2 class="txt-contacto">Información De Contacto</h2></i></div>
+          
+           <ul>
+            <li class="icono-tel"><i class="fa fa-phone fa-2x"></i>336 4787-8754</li>
+            <li class="icono-email"><i class="fa fa-envelope fa-2x"></i>sonar@gmail.com</li>
+        </ul>         
+      </div>
+       <div class="col-6">
+          <label for="nombreinput" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombreinput" placeholder="Ingresa tu Nombre">
+       </div>
+       <div class="col-6">
+          <label for="emailinput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailinput" placeholder="Ingresa tu Correo">
+       </div> 
+
+       <div class="col-6">
+        <label for="asuntoinput" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="asuntoinput" placeholder="">
      </div>
-    </div> 
+
+       <div class="col-6">
+          <label for="inputpass" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" id="inputtel" placeholder="Ingresa tu Telefono">
+       </div> 
+       <div class="col-12">
+        <label for="inputmensaje" class="form-label">Mensaje</label>
+          <input type="text" class="form-control" id="inputmensaje" placeholder="Ingresa tu Mensaje">
+       </div>
+       <div class="col-12">
+          <button type="submit" class="btn btn-primary">
+            Enviar
+          </button>
+          
+       </div>
+   </form>
+  </div> 
+    
 </main> 
        <!--Pie de Pagina-->
        <footer class="container-fluid">
