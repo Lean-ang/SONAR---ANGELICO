@@ -1,3 +1,5 @@
 -Se agrego Meta Description a todas las paginas
 -Se agrego Meta keywords a todas las paginas
 -Se agrego los Alt a las imagenes del carrusel
+-se modifico el index, se paso de grid a grid bootstap
+-la pagina de contacto se rediseño con bootstrap
