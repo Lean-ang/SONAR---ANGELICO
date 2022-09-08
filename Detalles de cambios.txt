@@ -3,3 +3,4 @@
 -Se agrego los Alt a las imagenes del carrusel
 -se modifico el index, se paso de grid a grid bootstap
 -la pagina de contacto se rediseño con bootstrap
+-se cambiaron las imagenes de las paginas iluminacion y sonido
